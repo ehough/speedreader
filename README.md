@@ -142,7 +142,7 @@ SpeedReader::getAsArray($subject, 'foo.bar.arrayAccess.hello');            /* ar
 
 ### `SpeedReader::get()`
 
-Gets the value at the given path. If no fallback is supplied, an `null` will be returned.
+Gets the value at the given path. If no fallback is supplied, `null` will be returned.
 
 ```php
 SpeedReader::get($subject, 'foo.bar.float');                    /* double(456.7)  */
