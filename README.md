@@ -134,7 +134,7 @@ SpeedReader::getAsArray($subject, 'foo.bar.object.foo');                   /* ar
 SpeedReader::getAsArray($subject, 'foo.bar.int');                          /* array(0) {}  */
 SpeedReader::getAsArray($subject, 'foo.bar.bool');                         /* array(0) {}  */
 SpeedReader::getAsArray($subject, 'foo.bar.object', array('foobar'));      /* array(1) { [0] => string(6) "foobar" }  */
-SpeedReader::getAsArray($subject, 'foo.bar.array', array('foobar'));       /* array(2) { [0] => string(3) "foo" [1] => string(3) "bar" }
+SpeedReader::getAsArray($subject, 'foo.bar.array', array('foobar'));       /* array(2) { [0] => string(3) "foo" [1] => string(3) "bar" } */
 SpeedReader::getAsArray($subject, 'foo.bar.string');                       /* array(0) {}  */
 SpeedReader::getAsArray($subject, 'foo.bar.arrayAccess', array('foobar')); /* array(1) { [0] => string(6) "foobar" }  */
 SpeedReader::getAsArray($subject, 'foo.bar.arrayAccess.hello');            /* array(0) {}  */
