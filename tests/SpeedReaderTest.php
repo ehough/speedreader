@@ -25,7 +25,7 @@ class SpeedReaderTest extends TestCase
      */
     public function testBadPaths($path)
     {
-        $this->setExpectedException(\InvalidArgumentException::class, 'Path must be a string or an array of strings');
+        $this->setExpectedException('\InvalidArgumentException', 'Path must be a string or an array of strings');
 
         SpeedReader::getAsString(array(), $path, 'default');
     }
