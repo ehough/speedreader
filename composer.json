@@ -1,0 +1,33 @@
+{
+  "name": "ehough/speedreader",
+  "description": "Nested-property accessor with an emphasis on performance",
+  "homepage": "https://github.com/ehough/speedreader",
+  "type": "library",
+  "license": "MPL-2.0",
+  "authors": [
+    {
+      "name"     : "Eric Hough",
+      "email"    : "eric@tubepress.com",
+      "homepage" : "https://github.com/ehough"
+    }
+  ],
+  "require": {
+    "php"              : "^5.3|^7.0",
+    "webmozart/assert" : "^1.2"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer" : "~2.2.0",
+    "phpunit/phpunit"           : "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hough\\SpeedReader\\": "src"
+    }
+  },
+  "scripts": {
+    "test"     : "phpunit -c phpunit.xml.dist",
+    "coverage" : "phpunit -c phpunit.xml.dist --coverage-text",
+    "cs"       : "php-cs-fixer fix -v --diff --config ./.codestyle.php --allow-risky=yes --ansi --dry-run",
+    "cs-fix"   : "php-cs-fixer fix -v --diff --config ./.codestyle.php --allow-risky=yes --ansi"
+  }
+}
