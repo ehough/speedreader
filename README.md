@@ -153,7 +153,7 @@ SpeedReader::get($subject, 'foo.bar.object.foo');               /* int(99)  */
 SpeedReader::get($subject, 'foo.bar.int');                      /* int(123)  */
 SpeedReader::get($subject, 'foo.bar.bool');                     /* array(1) { [0] => string(6) "foobar" } */
 SpeedReader::get($subject, 'foo.bar.object', null);             /* class stdClass#2 (1) { public $foo => int(99) }  */
-SpeedReader::get($subject, 'foo.bar.array', array('foobar'));   /* array(2) { [0] => string(3) "foo" [1] => string(3) "bar" }
+SpeedReader::get($subject, 'foo.bar.array', array('foobar'));   /* array(2) { [0] => string(3) "foo" [1] => string(3) "bar" } */
 SpeedReader::get($subject, 'foo.bar.string');                   /* string(6) "hello!"  */
 SpeedReader::get($subject, 'foo.bar.arrayAccess', null);        /* class ArrayIterator#3 (1) { ...   */
 SpeedReader::get($subject, 'foo.bar.arrayAccess.hello');        /* string(5) "there"  */
